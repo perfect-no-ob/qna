@@ -1,10 +1,3 @@
-# IITG stackoverflow
-
-![IITG-StackOverflow](https://socialify.git.ci/joat28/iitg-stack-overflow/image?description=1&descriptionEditable=IITG%20Stackoverflow&font=Source%20Code%20Pro&forks=1&issues=1&language=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark)
-
-## Description
-We want to connect the people who have knowledge to the people who need it.  
-As a team of 5 developers, we built this Q&A portal to help other developers gain and share insights into a problem.
 
 
 ## Tech Stack [MERN]
@@ -17,73 +10,6 @@ As a team of 5 developers, we built this Q&A portal to help other developers gai
 * As Database: `MongoDB`
 * API tested using: `POSTMAN`
 * Authentication: `JWT`
-
-## Guidelines to setup
-
-This application requires [Node.js](https://nodejs.org/)
-
-1. Clone the project
-    ```
-    git clone https://github.com/joat28/iitg-stack-overflow
-    ```
-
-2. Create a `.env` file in ```/server``` folder, and setup [Environment Variables](environment-variables).
-3. Run these commands then - 
-    ```
-    npm install
-    cd client
-    npm install
-    ```
-4. To start the client and the server 
-    ```
-    node server/index.js 
-    cd client
-    npm start
-    ```
-
-_NOTE: Might take sometime to start as there will be 2 servers running._
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-`PORT`, `DB_URI`, `JWT_SECRET_TOKEN`
-
-
-## API Endpoints
-
-#### Base Url - 
-`http://localhost:5000/api`
-
-#### Auth
-* `POST /login`
-* `POST /register`
-* `DELETE /logout`
-
-#### User
-* `GET /users`
-* `GET /user/:user_id`
-* `PATCH /user/:user_id`
-
-#### Answer
-* `PATCH /answer/:answer_id`
-* `PATCH /answer/vote/:answer_id`
-* `DELETE /answer/:answer_id`
-* `DELETE /posts/answers/:id`
-
-#### Questions
-* `GET /question`
-* `GET /question/:question_id`
-* `GET /question/top`
-* `GET /question/topTags`
-* `GET /question/answers/:question_id`
-* `POST /question/answers/:question_id`
-* `POST /question/ask`
-* `POST /question/tags/:pathname`
-* `PATCH /question/:question_id`
-* `PATCH /question/vote/:question_id`
-* `DELETE /question/:question_id`
-
-
 
 ## Screenshots
 
@@ -107,17 +33,4 @@ To run this project, you will need to add the following environment variables to
 ![Profile-Screen](./images/Profile.png)
 #### NotFound
 ![NotFound-Screen](./images/NotFound.png)
-
-## Acknowledgements
-
- - [Axios](https://axios-http.com/)
- - [Redux](https://github.com/matiassingers/awesome-readme)
- - [React Markdown](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
- - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
- - [Mongoose](https://mongoosejs.com/)
- - [Tailwind](https://tailwindcss.com/)
- - [Nodemon](https://nodemon.io/)
- - [Moment](https://momentjs.com/)
- - [Dice Bear](https://avatars.dicebear.com/)
- - [React Syntax Highlighter]()
 
